@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>サモンディフェンス</title>
+<meta name="description" content="魔術師の卓上で、カードから魔物を召喚して道を守るタワーディフェンス">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<div id="tableImg"></div><div class="flame" id="fl1"></div><div class="flame b" id="fl2"></div>
+<div id="app">
+  <header>
+    <h1><span>サモンディフェンス</span></h1>
+    <div class="hud">
+      <span class="chip" id="wave">WAVE 0/8</span>
+      <span class="chip" id="life">♥ <b>20</b></span>
+      <button id="spd" aria-pressed="false" aria-label="速度切替">×1</button>
+      <button id="pause" aria-label="一時停止">❚❚</button>
+    </div>
+  </header>
+  <div id="xpRow"><span id="lvl">Lv 1</span><div id="xpbar"><i></i></div><span id="xpn">0/12</span></div>
+  <div id="stage">
+    <div id="board">
+      <svg id="roadSvg" viewBox="0 0 6 9" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div id="tiles"></div>
+      <div id="startMark" class="mark">出現</div>
+      <div id="goalMark" class="mark"></div>
+      <div id="ents"></div>
+      <div id="range" hidden></div>
+    </div>
+  </div>
+  <div id="info"></div>
+  <div id="gaugeRow"><div id="skills"></div><div id="gauge"><div id="gfill"></div><div id="gticks"></div></div><span id="gnum">5<small>/10</small></span></div>
+  <div id="handRow"><div id="hand"></div><div id="piles"><span>山札<b id="deckN">0</b></span><span>墓地<b id="graveN">0</b></span></div></div>
+</div>
+<div id="light"></div>
+<div id="overlay"></div>
+<div id="banner"></div>
+<div id="toast"></div>
+<script src="data/cards.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
