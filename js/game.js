@@ -630,7 +630,8 @@ function howTo(pg,back){
   const body=pg===0?RULES:`<dl class="tribes">${tribeList(Object.keys(TRIBE))}</dl>`;
   showPanel(`<h2 class="sm">${pg===0?"遊び方":"種族の特性"}</h2>${body}
     <div class="pager"><button class="sub" id="hPrev" ${pg===0?"disabled":""}>‹ 戻る</button><span class="pg">${pg+1} / 2</span><button class="sub" id="hNext" ${pg===1?"disabled":""}>次へ ›</button></div>
-    <button class="go small" id="hClose">閉じる</button>`,()=>{
+    <button class="go small" id="hClose">閉じる</button>
+    <p class="credit">ドット絵素材：<a href="http://rpgdot3319.g1.xrea.com/" target="_blank" rel="noopener">Rド</a> 様　／　背景：Midjourney</p>`,()=>{
     $("#hPrev").onclick=()=>howTo(0,back);$("#hNext").onclick=()=>howTo(1,back);$("#hClose").onclick=back;});
 }
 function chooseScreen(){

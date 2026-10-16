@@ -30,7 +30,7 @@ tools/build-cards.js  カードデータの生成スクリプト
 
 ## カードを増やす
 
-カードの絵とステータスは「怪談じゃんけん」(DotRoguelikeCardBattle)の `index.html` から抜き出しています。
+カードの絵(Rド様の素材)とステータスは「怪談じゃんけん」(DotRoguelikeCardBattle)の `index.html` から読み込んでいます。
 
 1. `tools/build-cards.js` の `PAIRS` に `["進化前", "進化後"]` を足す(名前は怪談じゃんけんのカード名)
 2. 次を実行して `data/cards.js` を作り直す
@@ -47,5 +47,7 @@ node tools/build-cards.js ../DotRoguelikeCardBattle/index.html
 
 ## クレジット
 
-- キャラクターのドット絵：怪談じゃんけん(作者本人)
+- キャラクターのドット絵：[Rド](http://rpgdot3319.g1.xrea.com/) 様のフリー素材を使用しています(「怪談じゃんけん」で使っているものと同じ素材)
 - 背景の机と地図：Midjourney で作成
+
+ドット絵の著作権は素材の制作者に帰属します。`data/cards.js` などに含まれる画像を、素材として抜き出して再配布・転用することはできません。素材を使いたい場合は、配布元から入手して配布元の規約に従ってください。
