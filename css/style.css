@@ -248,7 +248,7 @@ h1 span{background:linear-gradient(180deg,#fff8e2,#d9b445 55%,#a67f24);-webkit-b
 @media (prefers-reduced-motion:reduce){.fig{animation:none}.unit.rise .fig img,.unit.rise .beam{animation:none}#board.shake{animation:none}}
 
 /* タイトル・遊び方・束選び */
-.panel h2.logo{font-size:clamp(28px,9vw,46px);letter-spacing:.1em;line-height:1.3;margin:0 0 18px;filter:drop-shadow(0 2px 10px rgba(0,0,0,.8))}
+.panel h2.logo{font-size:clamp(22px,8.2vw,40px);white-space:nowrap;letter-spacing:.1em;line-height:1.3;margin:0 0 18px;filter:drop-shadow(0 2px 10px rgba(0,0,0,.8))}
 .panel h2.sm{font-size:22px;letter-spacing:.14em}
 .helpBtn{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:max(16px,env(safe-area-inset-right,0px));width:34px;height:34px;border-radius:50%;
   border:0;font-family:var(--mincho);font-weight:800;font-size:17px;color:var(--gold);background:rgba(22,15,9,.85);box-shadow:inset 0 0 0 1px var(--line)}
